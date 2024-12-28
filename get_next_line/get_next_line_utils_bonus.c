@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcannars <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/27 14:41:42 by rcannars          #+#    #+#             */
-/*   Updated: 2024/12/27 14:42:33 by rcannars         ###   ########.fr       */
+/*   Created: 2024/12/27 14:47:45 by rcannars          #+#    #+#             */
+/*   Updated: 2024/12/27 14:47:49 by rcannars         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	check_new_line(char *buffer)
 {
