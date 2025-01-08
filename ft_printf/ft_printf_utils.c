@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_utils.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcannars <rcannars@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/08 10:51:51 by rcannars          #+#    #+#             */
+/*   Updated: 2025/01/08 10:54:49 by rcannars         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_putchar(char c)
@@ -7,7 +19,7 @@ int	ft_putchar(char c)
 
 int	ft_putstr(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (!s)
@@ -22,7 +34,7 @@ int	ft_putstr(char *s)
 
 static int	ft_num_len(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n <= 0)
@@ -37,7 +49,7 @@ static int	ft_num_len(int n)
 
 int	ft_putnbr(int n)
 {
-	int len;
+	int	len;
 
 	len = ft_num_len(n);
 	if (n == -2147483648)

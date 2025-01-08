@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_ptr.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcannars <rcannars@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/08 10:51:45 by rcannars          #+#    #+#             */
+/*   Updated: 2025/01/08 10:58:46 by rcannars         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	ft_ptr_len(unsigned long long num)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (num == 0)
@@ -33,9 +45,11 @@ static void	ft_put_ptr(unsigned long long num)
 
 int	ft_print_ptr(unsigned long long ptr)
 {
-	int len;
+	int	len;
 
-	len = 2; // Per "0x"
+	if (!ptr)
+		return (ft_putstr("(nil)"));
+	len = 2;
 	ft_putstr("0x");
 	if (ptr == 0)
 	{

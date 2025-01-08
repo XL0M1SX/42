@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcannars <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rcannars <rcannars@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 15:01:12 by rcannars          #+#    #+#             */
-/*   Updated: 2024/12/27 15:01:15 by rcannars         ###   ########.fr       */
+/*   Updated: 2025/01/08 10:51:56 by rcannars         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_format(va_list args, const char format)
 {
-    int	print_length;
+	int	print_length;
 
 	print_length = 0;
 	if (format == 'c')
@@ -37,8 +37,8 @@ static int	ft_format(va_list args, const char format)
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	int	print_length;
-	int	i;
+	int		print_length;
+	int		i;
 
 	print_length = 0;
 	i = 0;
